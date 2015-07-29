@@ -42,11 +42,11 @@ gulp.task('watch', function() {
 gulp.task('default', ['connect', 'watch'], function() {
     gulp.run('script', 'style');
 
-    gulp.watch("./src/js/*", function(event) {
+    gulp.watch("./src/js/**/*", function(event) {
         gulp.run('script');
     });
 
-    gulp.watch("./src/css/*", function(event) {
+    gulp.watch("./src/css/**/*", function(event) {
         gulp.run('style');
     });
 });

@@ -1,7 +1,135 @@
-body
-  font 12px Helvetica, Arial, sans-serif
+@import "normalize.css"
+@import "font-awesome.css"
+@import "title.css"
 
-a.button
-  -webkit-border-radius 5px
-  -moz-border-radius 5px
-  border-radius 5px
+@import 'nib'
+
+body
+	font-family 'Open Sans', sans-serif
+	background #f1f1f1
+
+a
+	text-decoration none
+
+.section-inner
+	width 1440px
+	max-width 93%
+	margin 0 auto	
+	position relative
+	
+#header
+	background-image url(/assets/img/bgHeader.jpg)
+	background-position 50% 55%
+	background-size cover
+	box-shadow inset 0px 0px 50px #78736D
+
+// Title
+#title
+	text-align center
+	padding 60px 0
+	color #fff
+	text-shadow 2px 2px 0px rgba(0,0,0,0.25)
+	
+#blog-title
+	a
+		font-weight 900
+		font-size 3.5em
+		color #fff
+		transition-duration 0.3s
+
+#blog-subtitle
+	font-weight 900
+	font-size 1.3em
+	
+	@media all and (max-width: 500px)
+		display none
+
+// Title end
+
+
+// Navigation
+
+#navigation
+	width 100%
+	background-color: rgba(29, 29, 29, 0.9);
+	position relative
+	
+#main-menu
+	margin 0
+	list-style none
+	padding 20px
+	padding-left 0
+	
+	li
+		display inline
+		position relative
+		padding 20px
+		padding-right 30px
+		
+	a
+		font-size 1em
+		font-weight 700
+		color #DCDCDC
+		text-transform uppercase
+		letter-spacing 1px
+		transition-duration 0.3s
+		
+	li:hover
+		a
+			cursor pointer
+			color #fff
+
+.slash:before
+	content "/"
+	display block
+	position absolute
+	right 0
+	top 50%
+	margin-top -0.5em
+	font-size 1.4em
+	color #989898
+	font-weight 300
+	z-index 1000
+
+#menu-social
+	position absolute
+	right 0
+	top 50%
+	margin-top -18px
+	list-style none
+	
+	li
+		float left
+		margin-left 5px
+		margin-right 5px
+		text-align center
+		
+		:hover
+				background #ca2017
+		
+		a
+			display block
+			width 36px
+			height 36px
+			background #333
+			color #fff
+			border-radius 999px
+			position relative
+			transition-duration 0.3s
+			
+			i
+				margin-top 9px
+
+
+
+// end Navigation
+
+// content
+
+// end content
+
+// Navigation
+// end Navigation
+
+// Navigation
+// end Navigation

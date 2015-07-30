@@ -154,14 +154,21 @@ hr
 	img
 		width 100%
 		border-top-left-radius 4px
+		transition-duration 0.3s
 		border-top-right-radius 4px
+	
+	a:hover img
+		opacity: 0.9
 
 
 .post-content
 	padding: 0 40px 40px;
 
 	header
-		margin: 5px 0;
+		h2
+			font-size: 1em;
+			margin 0
+			font-weight: normal;
 		
 		a
 			color: #292929;
@@ -205,10 +212,53 @@ hr
 		
 .post-footer
 	margin-top: 15px;
-	font-size: 0.75em;
+	font-size: 1em;
 	text-transform: uppercase;
 	color: #969696;
+
+.pull-right
+	a
+		position: relative;
+		top: -4px;
+	.fa
+		position: relative;
+		font-size: 1.4em;
+		top: 1px;
+		transition-duration 0.3s
+		left: 0px;
+	
+	:hover .fa
+		left: 6px
 // end article
+
+// footer
+#pagination
+	text-align center
+	color: #969696;
+	
+	a
+		display: inline-block;
+		background-color: #2196f3;
+		color: #fff;
+		border-radius: 50%;
+		font-variant: normal;
+		height: 50px;
+		width: 50px;
+		margin 30px
+		line-height: 50px;
+		transition-duration: 0.2s;
+		box-shadow: rgba(0,0,0,0.298) 0px 1px 2px 0px;
+	a:hover
+		box-shadow: 0 3px 3px rgba(0,0,0,.2)
+		background-color #2BAAFD
+// end footer
+
+
+// footer
+#footer
+	text-align center
+	color: #969696;
+// end footer
 
 // Responsive
 @media (max-width: 1140px)
@@ -220,6 +270,3 @@ hr
 		width 100%
 		margin-top 0
 // end Responsive
-
-// Navigation
-// end Navigation
